@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyTrademeTest">
         <activity
-            android:name=".MainListings"
+            android:name=".main_listings.ActivityMainListings"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
