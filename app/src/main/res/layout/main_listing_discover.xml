@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:text="@string/main_listing_search_title"
+            android:text="@string/main_listing_discover_title"
             android:textColor="@color/bluff_oyster_800"
             android:textSize="8pt"
             android:textStyle="bold" />

@@ -11,9 +11,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.pine.mytrademetest.R
 import com.pine.mytrademetest.app
 import com.pine.mytrademetest.n
+import com.pine.mytrademetest.net.beans.ListingItemBaseBean
 import com.pine.mytrademetest.net.beans.ListingItemBean
 import com.pine.mytrademetest.net.require
-import kotlinx.android.synthetic.main.main_listing_discover.*
 
 
 class FragmentDiscover : Fragment() {
@@ -52,7 +52,7 @@ class FragmentDiscover : Fragment() {
     private fun reloadLatest(){
         n().latest().require {
             it.let {
-                Toast.makeText(app(), it, Toast.LENGTH_LONG).show()
+                lists = it!!.List;
 
                 searchListAdapter.notifyDataSetChanged()
             }

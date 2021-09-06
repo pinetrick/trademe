@@ -62,10 +62,14 @@ final class RetrofitManager<T : Any> {
                     .addInterceptor {
                         val request: Request = it.request()
                             .newBuilder()
-                            .addHeader("Content-Type", "application/x-www-form-urlencoded")
+                            .addHeader("Content-Type", "text/json")
                             .addHeader(
                                 "Authorization",
-                                "OAuth oauth_consumer_key=\"${Config.apiKey}\", oauth_signature_method=\"PLAINTEXT\", oauth_signature=\"${Config.apiSecret}\""
+                                "OAuth " +
+                                        "oauth_consumer_key=${Config.apiKey}" +
+                                        ", oauth_token=${Config.tmpOauthToken}" +
+                                        ", oauth_signature_method=PLAINTEXT" +
+                                        ", oauth_signature=${Config.apiSecret}%26${Config.tmpOauthTokenSecret}"
                             )
                             .build()
                         it.proceed(request)

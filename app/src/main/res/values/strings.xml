@@ -6,5 +6,8 @@
     <string name="main_listing_menu_cart">Cart</string>
     <string name="main_listing_menu_profile">Profile</string>
 
-    <string name="main_listing_search_title">Browser</string>
+    <string name="main_listing_discover_title">Browser</string>
+    <string name="main_listing_discover_buy_now">Buy Now</string>
+    <string name="main_listing_discover_no_reserve">No Reserve</string>
+    <string name="main_listing_discover_reserve_met">Reserve Met</string>
 </resources>
