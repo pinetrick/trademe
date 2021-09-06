@@ -14,6 +14,6 @@ class FragmentProfile : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.main_list_fragment_profile, container, false)
+        return inflater.inflate(R.layout.main_listing_profile, container, false)
     }
 }

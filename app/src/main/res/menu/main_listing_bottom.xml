@@ -3,20 +3,17 @@
     <item
         android:id="@+id/main_listing_menu_search"
         android:enabled="true"
-        android:icon="@drawable/main_listing_img_search"
-        android:title="@string/main_listing_menu_search"
-        app:showAsAction="ifRoom" />
+        android:icon="@drawable/main_listing_img_discover"
+        android:title="@string/main_listing_menu_discover" />
     <item
         android:id="@+id/main_listing_menu_cart"
         android:enabled="true"
         android:icon="@drawable/main_listing_img_cart"
-        android:title="@string/main_listing_menu_cart"
-        app:showAsAction="ifRoom" />
+        android:title="@string/main_listing_menu_cart" />
     <item
         android:id="@+id/main_listing_menu_profile"
         android:enabled="true"
         android:icon="@drawable/main_listing_img_profile"
-        android:title="@string/main_listing_menu_profile"
-        app:showAsAction="ifRoom" />
+        android:title="@string/main_listing_menu_profile" />
 
 </menu>

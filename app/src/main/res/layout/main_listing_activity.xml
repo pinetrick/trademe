@@ -19,6 +19,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:itemIconTint="@drawable/main_listing_item_selector"
+        app:itemTextColor="@drawable/main_listing_item_selector"
+        app:backgroundTint="@color/white"
         app:menu="@menu/main_listing_bottom" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,6 +13,6 @@ class FragmentCart : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.main_list_fragment_cart, container, false)
+        return inflater.inflate(R.layout.main_listing_cart, container, false)
     }
 }

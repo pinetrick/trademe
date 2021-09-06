@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.pine.mytrademetest.R
+import com.pine.mytrademetest.main_listings.discover.FragmentDiscover
 import kotlinx.android.synthetic.main.main_listing_activity.*
 
 
@@ -21,7 +22,7 @@ class ActivityMainListings : AppCompatActivity() {
 
     private fun initFragementData() {
         mFragments = ArrayList()
-        mFragments.add(FragmentSearch())
+        mFragments.add(FragmentDiscover())
         mFragments.add(FragmentCart())
         mFragments.add(FragmentProfile())
         // Init the fragement to search
