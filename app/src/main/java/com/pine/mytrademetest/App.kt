@@ -2,6 +2,7 @@ package com.pine.mytrademetest
 
 import android.app.Application
 import androidx.multidex.MultiDexApplication
+import com.facebook.drawee.backends.pipeline.Fresco
 import com.pine.mytrademetest.net.RetrofitManager
 import com.pine.mytrademetest.net.RetrofitServices
 
@@ -33,7 +34,8 @@ class App : MultiDexApplication() {
         App.app = this;
 
         initRetrofit();
-
+        //facebook imageview init
+        Fresco.initialize(this);
      }
 
     private fun initRetrofit() {

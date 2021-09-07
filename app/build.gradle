@@ -52,7 +52,8 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
-
+    //facebook Image Load ImageView
+    implementation 'com.facebook.fresco:fresco:2.3.0'
 
     //Build for multi dex
     implementation 'androidx.multidex:multidex:2.0.0'

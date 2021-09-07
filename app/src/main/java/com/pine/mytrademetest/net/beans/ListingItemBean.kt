@@ -5,10 +5,12 @@ class ListingItemBean {
     var Title: String = "";
     var PictureHref: String = "";
     var Region: String = "";
-    var StartPrice: Double = 0.0;
-    var BuyNowPrice: Double = 0.0;
-    var PriceDisplay: Double = 0.0;
+    var StartPrice: Double = -1.0;
+    var BuyNowPrice: Double = -1.0;
+    var PriceDisplay: String = "";
     var HasFreeShipping: Boolean = false;
+    var ReserveState: Int = -1;
     var IsClassified: Boolean = false;
+    var IsBuyNowOnly: Boolean = false;
 
 }

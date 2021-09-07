@@ -3,6 +3,7 @@ package com.pine.mytrademetest.net
 import android.widget.Toast
 import com.google.gson.GsonBuilder
 import com.pine.mytrademetest.Config
+import com.pine.mytrademetest.a
 import com.pine.mytrademetest.app
 import okhttp3.*
 import retrofit2.Call
@@ -128,7 +129,7 @@ fun <T> Call<T>.require(function: (response: T?) -> Unit) {
 
         // TODO: 2021/9/6  make it global, watch the network change
         override fun onFailure(call: Call<T>, t: Throwable) {
-            Toast.makeText(app(), "Load Fail", Toast.LENGTH_LONG).show()
+            Toast.makeText(a(), "Load Fail", Toast.LENGTH_LONG).show()
             function(null);
         }
 

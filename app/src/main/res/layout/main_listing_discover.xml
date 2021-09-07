@@ -27,7 +27,7 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/search_btn"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:padding="8dp"
@@ -35,7 +35,7 @@
             app:tint="@color/tasman_500" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/cart_btn"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:padding="8dp"
