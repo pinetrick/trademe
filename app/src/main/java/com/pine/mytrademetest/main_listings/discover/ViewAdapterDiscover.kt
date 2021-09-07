@@ -3,9 +3,11 @@ package com.pine.mytrademetest.main_listings.discover
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.pine.mytrademetest.App
 import com.pine.mytrademetest.R
+import com.pine.mytrademetest.a
 import com.pine.mytrademetest.app
 import com.pine.mytrademetest.funs.toMoney
 
@@ -29,6 +31,8 @@ class ViewAdapterDiscover (var discoverFragment: FragmentDiscover) : RecyclerVie
     override fun onBindViewHolder(holder: ViewHolderDiscover, position: Int) {
         //get each list data
         var list = discoverFragment.lists[position]
+
+        holder.listing_line!!.setOnClickListener { Toast.makeText(a(), "Placeholder: Intent to another activity (${list.ListingId})", Toast.LENGTH_LONG).show() }
 
         holder.picture!!.setImageURI(list.PictureHref)
         holder.title!!.setText(list.Title)
