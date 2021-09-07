@@ -2,10 +2,11 @@
     <string name="app_name">MyTrademeTest</string>
 
 
-    <string name="main_listing_menu_discover">Discover</string>
-    <string name="main_listing_menu_cart">Cart</string>
-    <string name="main_listing_menu_profile">Profile</string>
+    <string name="main_listing_menu_discover">Latest listings</string>
+    <string name="main_listing_menu_watchlist">Watchlist</string>
+    <string name="main_listing_menu_profile">My Trade Me</string>
 
+    <string name="main_listing_discover_free_shipping">Free Shipping</string>
     <string name="main_listing_discover_title">Browser</string>
     <string name="main_listing_discover_buy_now">Buy Now</string>
     <string name="main_listing_discover_no_reserve">No Reserve</string>

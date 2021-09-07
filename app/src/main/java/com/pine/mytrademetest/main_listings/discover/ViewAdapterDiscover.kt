@@ -28,6 +28,36 @@ class ViewAdapterDiscover (var discoverFragment: FragmentDiscover) : RecyclerVie
         onBindViewHolder(holder, position);
     }
 
+    /*
+    * API Return Error: This list is free shipping list, however, no free shipping returned
+    * and not all api return ReserveState field,
+    * {
+            "ListingId": 2149307328,
+            "Title": "test",
+            "Category": "4798-6111-7678-",
+            "StartPrice": 3,
+            "BuyNowPrice": 50,
+            "StartDate": "/Date(1630978538133)/",
+            "EndDate": "/Date(1631583338133)/",
+            "ListingLength": null,
+            "HasGallery": true,
+            "AsAt": "/Date(1630978752792)/",
+            "CategoryPath": "/Health-beauty/Weight-loss/Shapewear",
+            "PictureHref": "https://images.tmsandbox.co.nz/photoserver/thumb/8759778.jpg",
+            "IsNew": true,
+            "Region": "Auckland",
+            "Suburb": "Auckland City",
+            "HasBuyNow": true,
+            "NoteDate": "/Date(0)/",
+            "PriceDisplay": "$3.00",
+            "PromotionId": 2,
+            "AdditionalData": {
+                "BulletPoints": [],
+                "Tags": []
+            },
+            "MemberId": 4007168
+        },
+    * */
     override fun onBindViewHolder(holder: ViewHolderDiscover, position: Int) {
         //get each list data
         var list = discoverFragment.lists[position]
@@ -48,13 +78,22 @@ class ViewAdapterDiscover (var discoverFragment: FragmentDiscover) : RecyclerVie
             holder.buy_now_price!!.setText(list.BuyNowPrice.toMoney())
         }
 
+
+        if (list.HasFreeShipping){
+            holder.free_shipping!!.visibility = View.VISIBLE;
+        }
+        else{
+            holder.free_shipping!!.visibility = View.GONE;
+        }
+
         if (list.ReserveState == -1) {
             if (list.IsBuyNowOnly){
                 list.ReserveState = 3;
             }
-            else if ((list.StartPrice > 0) && (list.BuyNowPrice <= 0)){
+            else if ((list.StartPrice > 0)){
                 list.ReserveState = 2;
             }
+
         }
         if (list.ReserveState == 0){//None There is no reserve on the item (i.e. the reserve price is the same as the starting price).
             holder.is_reserved!!.visibility = View.GONE

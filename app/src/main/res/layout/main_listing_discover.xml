@@ -6,44 +6,7 @@
     android:layout_height="match_parent">
 
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginHorizontal="10dp"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="1dp">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/main_listing_discover_title"
-            android:textColor="@color/bluff_oyster_800"
-            android:textSize="8pt"
-            android:textStyle="bold" />
-
-        <ImageView
-            android:id="@+id/search_btn"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:padding="8dp"
-            android:layout_gravity="center"
-            app:srcCompat="@drawable/main_listing_img_discover"
-            app:tint="@color/tasman_500" />
-
-        <ImageView
-            android:id="@+id/cart_btn"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:padding="8dp"
-            app:srcCompat="@drawable/main_listing_img_cart"
-            app:tint="@color/tasman_500" />
-    </LinearLayout>
 
 
     <androidx.recyclerview.widget.RecyclerView

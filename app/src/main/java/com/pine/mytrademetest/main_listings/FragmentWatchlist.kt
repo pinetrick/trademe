@@ -7,12 +7,12 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.pine.mytrademetest.R
 
-class FragmentCart : Fragment() {
+class FragmentWatchlist : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.main_listing_cart, container, false)
+        return inflater.inflate(R.layout.main_listing_watchlist, container, false)
     }
 }

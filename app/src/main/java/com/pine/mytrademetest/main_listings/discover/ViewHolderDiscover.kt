@@ -16,6 +16,7 @@ class ViewHolderDiscover(var v: View): RecyclerView.ViewHolder(v){
     var buy_now: TextView? = null;
     var title: TextView? = null;
     var region: TextView? = null;
+    var free_shipping: TextView? = null;
     var picture: SimpleDraweeView? = null;
     var listing_line: ConstraintLayout? = null;
 
@@ -27,6 +28,7 @@ class ViewHolderDiscover(var v: View): RecyclerView.ViewHolder(v){
         buy_now = v.findViewById(R.id.buy_now);
         title = v.findViewById(R.id.title);
         region = v.findViewById(R.id.region);
+        free_shipping = v.findViewById(R.id.free_shipping);
         picture = v.findViewById(R.id.picture);
         listing_line = v.findViewById(R.id.listing_line);
     }

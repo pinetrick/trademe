@@ -8,7 +8,7 @@
         android:id="@+id/main_list_fragment_cart_placeholder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Placeholder"
+        android:text="Placeholder watchlist"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

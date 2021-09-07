@@ -24,8 +24,7 @@ class FragmentDiscover : Fragment() {
     var searchListAdapter = ViewAdapterDiscover(this);
 
     lateinit var search_list: RecyclerView;
-    lateinit var search_btn: ImageView;
-    lateinit var cart_btn: ImageView;
+
 
 
     override fun onCreateView(
@@ -37,7 +36,6 @@ class FragmentDiscover : Fragment() {
 
         var view = initViews(inflater, container);
         initSearchList();
-        initBtnClicks();
         reloadLatest()
 
         return view;
@@ -46,17 +44,13 @@ class FragmentDiscover : Fragment() {
     private fun initViews(inflater: LayoutInflater, container: ViewGroup?): View? {
         var view = inflater.inflate(R.layout.main_listing_discover, container, false)
         search_list = view.findViewById(R.id.search_list)
-        search_btn = view.findViewById(R.id.search_btn)
-        cart_btn = view.findViewById(R.id.cart_btn)
+
 
 
         return view;
     }
 
-    private fun initBtnClicks() {
-        search_btn.setOnClickListener { Toast.makeText(a(), "Placeholder: Search Clicked", Toast.LENGTH_LONG).show() }
-        cart_btn.setOnClickListener { Toast.makeText(a(), "Placeholder: Cart Clicked", Toast.LENGTH_LONG).show() }
-    }
+
 
     private fun initSearchList() {
         var layoutManager = LinearLayoutManager(app())
